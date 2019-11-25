@@ -1,0 +1,50 @@
+<div>
+  <body>
+    <div class="myContainer">
+      <header class="colorBG">
+          <img src="./Images/Logo.jpg" alt="not found" style="float: left;"/>
+          <br/>
+          <ul>
+              <li> <a href=""> Home </a> </li>
+              <li> <a href=""> About </a> </li>
+              <li> <a href=""> Contact Us</a> </li>
+            </ul>
+          <h2 style="text-align: center;" >Bingo Game</h2>
+          <app-panel-game></app-panel-game>
+      </header>
+  
+      <section>
+          
+          <nav style="width: 200px; height: 300px; float: left;" class="colorBG">
+      
+              <button
+                mat-raised-button
+                color="primary"
+                onclick="this.panelGameService.StartGame()"        
+              >
+                  Start Game
+              </button>
+        
+          
+        </nav>
+        
+        <div>
+
+          <app-card-game class="CardsClass" ></app-card-game>
+          <app-card-game class="CardsClass" ></app-card-game>
+          <app-card-game class="CardsClass" ></app-card-game>
+          <app-card-game class="CardsClass" ></app-card-game>
+          
+        </div>
+      </section>
+  
+      <aside>
+        
+      </aside>
+      
+    <footer  class="colorBG">
+      &copy; copywrite bingoScreen.com
+    </footer>
+  </div>
+</body>
+</div>

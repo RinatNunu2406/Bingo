@@ -1,0 +1,12 @@
+
+<div class="panelDiv" *ngIf = "this.panelGameService.getPanelArray().length > 0">
+    <div class="boolClass" *ngFor="let b of this.panelGameService.getPanelArray()"> 
+        <div style="align-content: center; vertical-align: middle;  color: blue;">
+                {{ b }}  
+        </div>
+              
+     </div>
+     <div style="text-align: center;" *ngIf="this.panelGameService.Bingo">
+         *** GAME OVER ***
+     </div>
+</div>
